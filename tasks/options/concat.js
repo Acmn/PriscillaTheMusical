@@ -29,6 +29,6 @@ module.exports = {
 		//'js/responsiveslides.js',
 		'js/app.js'
     ],
-    dest: 'js/build/production.js'
+    dest: 'build/production.js'
   }
 }

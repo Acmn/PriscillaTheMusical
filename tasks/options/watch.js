@@ -22,5 +22,12 @@ module.exports = {
     options: {
       spawn: false
     }
+  },
+  images: {
+    files: ['img/*.*'],
+    tasks: ['newer:imagemin', 'notify'],
+    options: {
+      spawn: false,
+    }
   }
 }

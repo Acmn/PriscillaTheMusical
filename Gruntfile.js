@@ -26,15 +26,14 @@ module.exports = function(grunt) {
   // Load all the tasks options in tasks/options base on the name:
   // watch.js => watch{}
   grunt.util._.extend(config, loadConfig('./tasks/options/'));
+  
+  require('time-grunt')(grunt);
 
   grunt.initConfig(config);
 
   require('load-grunt-tasks')(grunt);
 
   // Default Task is basically a rebuild
-  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'autoprefixer', 'cssmin']);
-
-  // Moved to the tasks folder:
-  // grunt.registerTask('dev', ['connect', 'watch']);
-
+  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'autoprefixer', 'cssmin', 'notify']);
+  grunt.registerTask('images', ['newer:imagemin']);
 };
