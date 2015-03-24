@@ -116,7 +116,7 @@ function starter_scripts_and_styles() {
     // If the server include .dev then load unminifeid css, else load minified and prefixed. 
     // Allows us to use Sourcemaps in chrome to see which .scss file is creating rules
     if (strpos($_SERVER['SERVER_NAME'],'.dev') !== false) {
-      wp_register_style( 'starter-stylesheet', get_template_directory_uri() . '/css/style.css', array(), '201411181035', 'all' );
+      wp_register_style( 'starter-stylesheet', get_template_directory_uri() . '/build/style.css', array(), '201411181035', 'all' );
       wp_register_script( 'starter-js', get_template_directory_uri() . '/js/build/production.js', array( 'jquery' ), '201411181035', true );
     } else {
       wp_register_style( 'starter-stylesheet', get_template_directory_uri() . '/build/mini-style.css', array(), '201411181035', 'all' );

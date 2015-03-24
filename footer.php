@@ -12,14 +12,14 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'starter' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'starter' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'starter' ), 'starter 2', '<a href="http://twitter.com/mtedwards" rel="designer">Matt Edwards</a>' ); ?>
+			All rights reserved &copy; <?php echo date('Y'); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<!--[if lt IE 9 ]>
+	<script src="<?php bloginfo('template_url'); ?>/build/REM-unit-polyfill/js/rem.min.js" type="text/javascript"></script>
+<![endif]-->
 </body>
 </html>
