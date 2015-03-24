@@ -8,6 +8,11 @@
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
+ 
+require_once( get_template_directory() . '/inc/lib/clean.php'); // do all the cleaning and enqueue here
+require_once( get_template_directory() . '/inc/lib/foundation.php'); // load Foundation specific functions like top-bar
+require_once( get_template_directory() . '/inc/lib/theme-functions.php'); // load Foundation specific functions like top-bar
+ 
 if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
