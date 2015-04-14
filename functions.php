@@ -8,10 +8,11 @@
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
- 
-require_once( get_template_directory() . '/inc/lib/clean.php'); // do all the cleaning and enqueue here
-require_once( get_template_directory() . '/inc/lib/foundation.php'); // load Foundation specific functions like top-bar
-require_once( get_template_directory() . '/inc/lib/theme-functions.php'); // load Foundation specific functions like top-bar
+
+
+// do all the cleaning and enqueue here
+
+require get_template_directory() . '/inc/lib/clean.php';
  
 if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
@@ -73,14 +74,10 @@ function starter_setup() {
 	add_theme_support( 'post-formats', array(
 		'aside', 'image', 'video', 'quote', 'link',
 	) );
-
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'starter_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
 }
 endif; // starter_setup
+
+
 add_action( 'after_setup_theme', 'starter_setup' );
 
 /**
@@ -131,3 +128,7 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+// load Foundation specific functions like top-bar
+require get_template_directory() . '/inc/lib/foundation.php'; 
+require get_template_directory() . '/inc/lib/theme-functions.php'; 

@@ -1,7 +1,7 @@
 .site {
   @include grid-row();
   .site-header, .site-content, .site-footer {
-    @include grid-column(4);
+    @include grid-column($total-columns);
   }
 }
 

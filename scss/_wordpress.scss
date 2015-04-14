@@ -10,36 +10,34 @@
 /* Start to customize Starter */
 
 /* Starndard WordPress Image alignment */
-.alignright {
-  float: right;
-  margin: 0 0 1em 1em;
-}
 
-.alignleft {
-  float: left;
-  margin: 0 1em 1em 0;
-}
-
-.aligncenter {
+.aligncenter, .alignright, .alignleft {
   display:block;
   margin: 1em auto;
 }
 
+@media #{$medium-up} {
 
-
-// adjusting header
-h4.subheader {
-  margin-top: -1em;
+  .alignright {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+  
+  .alignleft {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
 }
 
 
+
  .skip-link {
-        position:absolute;
-        left:-10000px;
-        top:auto;
-        width:1px;
-        height:1px;
-        overflow:hidden;
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
 
   &:focus { 
         position:static; 
@@ -47,39 +45,6 @@ h4.subheader {
         height:auto; 
     }
   }
-
-
-// add some basic comment styles
-/*
-ol.commentlist {
-	margin-left: 0;
-	margin-top: 2em;
-	li {
-		list-style: none;
-		margin-bottom: 2em;
-	}
-		.comment-author img {
-			border-radius: 50%;
-			float: left;
-			margin: 0 1em 0 0;
-		}
-		.author-meta {
-			display: inline-block;
-		}
-			cite.fn {
-				@extend h4;
-				margin-right: 0.5em;
-			}
-		section.comment {
-			@include panel(white, 20px);
-		}
-			a.comment-reply-link {
-				float: right;
-				position: relative;
-				bottom: 1em;
-			}
-}
-*/
 
 
 // add some margin for images in post
@@ -90,11 +55,6 @@ ol.commentlist {
 // adjust search button on top-bar
 input.prefix.button {
 	line-height: 1;
-}
-
-// adjust search button on sideba
-#sidebar input.prefix.button {
-	line-height: 0.7;
 }
 
 .orbit-slide-number {
