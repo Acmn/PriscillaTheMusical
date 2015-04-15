@@ -1,5 +1,5 @@
         
-<div class="ticket-details">
+<div class="ticket-details" id="ticketsPage">
         
   <?php 
     if(get_field('waitlist')){ ?>
@@ -30,17 +30,16 @@
       $ticketLinks = get_field('tickets_link');
       if ($ticketLinks) {
         foreach ($ticketLinks as $ticketLink) { ?>
-        <a href="<?php echo $ticketLink['url']; ?>" class="button" target="_blank" onclick="ga('send', 'event', 'purchase', 'tickets', '<?php echo $tickets; ?>');"><?php echo $ticketLink['button_text']; ?></a>
+        <a href="<?php echo $ticketLink['url']; ?>" class="button ticket-button" target="_blank" onclick="ga('send', 'event', 'purchase', 'tickets', '<?php echo $tickets; ?>');"><?php echo $ticketLink['button_text']; ?></a>
         <?php
         } // end foreach
       } // end ticketLinks
      ?>
             
       <p>
-        PHONE <?php the_field('phone'); ?> or 
-        <a href="<?php the_field('outlet_link'); ?>" target="_blank" onclick="ga('send', 'event', 'purchase', 'in person', '<?php echo $tickets; ?>');">
-          <u>LOCATE AN OUTLET</u>
-        </a>
+        Phone <?php the_field('phone'); ?> or 
+        <a href="<?php the_field('outlet_link'); ?>" target="_blank" onclick="ga('send', 'event', 'purchase', 'in person', '<?php echo $tickets; ?>');">Locate an outlet</a>
+      </p>
   </section>  
   <?php // END MAIN TICKET DETAILS ?>
   
@@ -71,10 +70,13 @@
   <section class="information">
     <h3><?php the_field('information_heading'); ?></h3>
     
-    <p class="location"><?php the_field('info_theare'); ?></p>
+    <p class="location">
+      <?php the_field('info_theatre'); ?></p>
+    <p>
+      <?php the_field('location'); ?>
     
-    <p><?php the_field('location'); ?>
-    <a href="<?php the_field('map_link'); ?>" target="_blank">VIEW MAP</a></p> 
+      <a href="<?php the_field('map_link'); ?>" target="_blank">VIEW MAP</a>
+    </p> 
     
     <div class="times">
       <h4><?php the_field('show_times_heading'); ?></h4>

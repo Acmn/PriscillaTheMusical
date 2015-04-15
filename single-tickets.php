@@ -24,7 +24,7 @@ get_header(); ?>
   			
   			get_template_part( 'partials/tickets', 'container' ); 
   		?>
-  		
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
