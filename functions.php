@@ -53,7 +53,14 @@ function starter_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	
-	add_theme_support( 'post-thumbnails' );
+	
+	if ( function_exists( 'add_theme_support' ) ) { 
+    add_theme_support( 'post-thumbnails' );
+    
+    // additional image sizes
+    // delete the next line if you do not need additional image sizes
+    add_image_size( 'cast-headshot', 600, 600, true ); // 600 * 600 square
+  }
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
