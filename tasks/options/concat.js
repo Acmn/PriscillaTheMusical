@@ -23,7 +23,7 @@ module.exports = {
 		'bower_components/foundation/js/vendor/fastclick.js',
 		'js/navigation.js',
 		'skip-link-focus-fix.js',
-		//'bower_components/fitvids/jquery.fitvids.js',
+		'bower_components/fitvids/jquery.fitvids.js',
 		//'js/jquery.fancybox.js',
 		//'js/jquery.fancybox-media.js',
 		//'js/responsiveslides.js',
