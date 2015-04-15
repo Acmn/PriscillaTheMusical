@@ -1,0 +1,21 @@
+{
+    "key": "group_552db163a5c4c",
+    "title": "Tickets Cities - Custom Post Type",
+    "fields": [],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "tickets"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [],
+    "modified": 1429058175
+}

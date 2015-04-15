@@ -1,0 +1,21 @@
+{
+    "key": "group_552db163e1eda",
+    "title": "Cast - Custom Post Type",
+    "fields": [],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "people"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [],
+    "modified": 1429058175
+}
