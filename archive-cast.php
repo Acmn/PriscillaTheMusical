@@ -17,17 +17,18 @@ get_header(); ?>
       
 			<?php while ( have_posts() ) : the_post(); ?>
 
-      <section class="cast-member">
-        <h1><?php the_title(); ?></h1>
-        <h2><?php the_field('role'); ?></h2>
-        <p>Follow on Twitter: <a href="http://twitter.com/<?php the_field('twitter_handle'); ?>" target="_blank">@<?php the_field('twitter_handle'); ?></a></p>
-        <?php
-          if ( has_post_thumbnail() ) {
-            the_post_thumbnail('cast-headshot', array('class' => 'alignleft'));
-          }
-          the_excerpt();
-        ?>
-      </section>
+        <section class="cast-member">
+          <h1><a href="<?php the_permalink();  ?>"><?php the_title(); ?></a></h1>
+          <h2><?php the_field('role'); ?></h2>
+          <p>Follow on Twitter: <a href="http://twitter.com/<?php the_field('twitter_handle'); ?>" target="_blank">@<?php the_field('twitter_handle'); ?></a></p>
+          <?php
+            if ( has_post_thumbnail() ) {
+              the_post_thumbnail('cast-headshot', array('class' => 'alignleft'));
+            }
+            the_excerpt();
+          ?>
+          <a href="<?php the_permalink();  ?>">Read More</a>
+        </section>
 
 
 			<?php endwhile; // end of the loop. ?>
