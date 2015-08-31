@@ -12,7 +12,8 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			All rights reserved &copy; <?php echo date('Y'); ?>
+			<p><a href="/contact-us">Contact Us</a> | <a href="/privacy-policy">Privacy Policy</a> | <a href="/media">Media</a></p>
+			<p>All rights reserved &copy; <?php echo date('Y'); ?></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

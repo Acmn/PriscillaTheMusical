@@ -17,7 +17,7 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				 <article <?php post_class('small-12 large-9 large-push-3 columns') ?> id="post-<?php the_ID(); ?>" role="main">
+				 <article <?php post_class('small-12 columns') ?> id="post-<?php the_ID(); ?>" role="main">
       			<div class="entry-content">
       				<?php 
         				 if (  post_password_required() ) {
