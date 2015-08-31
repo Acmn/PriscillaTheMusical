@@ -30,10 +30,10 @@
 		
 		<?php
   		//Flat Menu
-  		get_template_part( 'partials/flat', 'menu' ); 
+  		//get_template_part( 'partials/flat', 'menu' ); 
   		
   		//Top Menu
-  		//get_template_part( 'partials/top', 'bar' ); 
+  		get_template_part( 'partials/top', 'bar' ); 
 		?>
 		
 	</header><!-- #masthead -->
