@@ -12,8 +12,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="content-area row">
+		<main id="main" class="site-main site-page small-12 medium-12 large-8 columns" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 

@@ -1,0 +1,34 @@
+footer{
+	margin-top:4rem;
+	padding:1rem 0 3rem 0;
+	@media #{$medium-up}{
+		
+	}
+	p,a{
+		margin-bottom:0;
+	}
+	a{
+		color:white!important;
+		&:hover{
+			color:primary-color;
+		}
+	}
+}
+
+.site {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: 0px; 
+}
+.site:after {
+  content: "";
+  display: block;
+}
+footer, .site:after {
+
+
+
+}
+footer {
+  background: black;
+}

@@ -1,0 +1,22 @@
+#page{
+	max-width: 100%;
+	width: 100%;
+	min-height: 920px !important;
+	height: auto !important;
+	
+	background: url(../img/priscilla-bg-lg.jpg) repeat-x;
+	background-position: 55% -90px;
+
+	@media #{$medium-up}{
+		background-position: 50% 20px;
+	}
+
+	@media #{$large-up}{
+		background-position: 50% 0px;
+	}
+
+	
+	margin: 0 auto !important;
+	display: block;
+	position: relative;
+}

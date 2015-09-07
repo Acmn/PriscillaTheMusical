@@ -9,11 +9,14 @@
 ?>
 
 	</div><!-- #content -->
+	</div><!-- .site -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<div class="hide-for-large-up social-icons small-8 medium-5 small-centered large-3 columns"><?php get_template_part( 'partials/social', 'icons' ); ?></div>
+
+	<footer id="colophon" class="site-footer text-center" role="contentinfo">
 		<div class="site-info">
 			<p><a href="/contact-us">Contact Us</a> | <a href="/privacy-policy">Privacy Policy</a> | <a href="/media">Media</a></p>
-			<p>All rights reserved &copy; <?php echo date('Y'); ?></p>
+			<!--<p>All rights reserved &copy; <?php echo date('Y'); ?></p>-->
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

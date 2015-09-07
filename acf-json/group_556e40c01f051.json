@@ -3,6 +3,24 @@
     "title": "Homepage",
     "fields": [
         {
+            "key": "field_55ed0a49a5ff4",
+            "label": "Featured Quote",
+            "name": "featured_quote",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
             "key": "field_557678ec2d6ba",
             "label": "Groups call to action",
             "name": "groups_call_to_action",
@@ -36,5 +54,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "modified": 1440988326
+    "active": 1,
+    "description": "",
+    "modified": 1441598038
 }
