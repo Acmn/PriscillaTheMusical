@@ -1,11 +1,10 @@
 footer{
 	padding:2rem 0;
-	@media #{$medium-up}{
-		
-	}
-	p,a{
+	
+	p, a{
 		margin-bottom:0;
 	}
+	
 	a{
 		color:white!important;
 		&:hover{
@@ -14,7 +13,7 @@ footer{
 	}
 }
 
-
+// Stick Footer 
 * {
   margin: 0;
 }

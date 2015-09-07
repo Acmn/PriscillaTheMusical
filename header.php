@@ -33,12 +33,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div id="page" class="hfeed page-wrapper">
 	<a class="skip-link screen-reader-text " href="#content"><?php _e( 'Skip to content', 'starter' ); ?></a>				
 	<header id="masthead" class="site-header" role="banner">
-		<div class="row">
+		<div class="row">			
 			<div class="site-branding small-12 medium-12 large-8 columns">
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span><?php bloginfo( 'name' ); ?></span></a></h1>
-			</div><!-- .site-branding -->
-			
-			<div class="show-for-large-up social-icons small-12 medium-12 large-4 columns"><?php get_template_part( 'partials/social', 'icons' ); ?></div>
+			</div><!-- .site-branding -->			
+			<div class="show-for-large-up social-icons small-12 medium-12 large-4 columns">
+				<?php get_template_part( 'partials/social', 'icons' ); ?>
+			</div>
 		</div>
 		
 		<?php

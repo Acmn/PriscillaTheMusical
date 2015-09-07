@@ -6,17 +6,21 @@ body.home{
 	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.2);
 	padding:0 1rem;
 	border-radius:12px;
+	
 	hr{
 		margin-left:-1rem;
 		margin-right:-1rem;
 		border-color:rgba(0,0,0,.1)!important;
 	}
+	
 	h2{
 		margin: 0;
 	}
 }
+
 .featured-quote{
 	padding-top:10px;
+	
 	h2{
 		color: white !important; 
 	}

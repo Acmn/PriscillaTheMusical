@@ -1,8 +1,10 @@
 .gform_wrapper{
+	
 	@media #{$large-up}{
 		margin: 0;
 		padding:0;
 	}
+
 	.gfield_label{
 		color:#ebd4aa;
 		text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
@@ -22,7 +24,6 @@
 		
 	}
 
-
 	.gform_fields{
 		li{
 			@media #{$small-only}{
@@ -31,13 +32,11 @@
 		}
 	}
 
-
 	input, select{
 		
 		background:$secondary-color;
 		border-color:#ff5aaf;
 	}
-
 	
 	.gform_footer{
 		
@@ -55,7 +54,7 @@
 		.gform_button.button{
 			background: scale-color($secondary-color, $lightness: $button-function-factor);
 			border:1px solid white;
-			padding:0.3rem 4rem;
+			padding:0.3rem 3rem;
 			font-family:$font-family-secondary;
 			font-size:2rem;
 			&:hover{
@@ -66,6 +65,6 @@
 }
 
 
-	.gform_wrapper .top_label .gfield_label {
-    	margin: 0!important;
-    }
+.gform_wrapper .top_label .gfield_label {
+    margin: 0!important;
+}
