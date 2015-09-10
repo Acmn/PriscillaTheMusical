@@ -13,7 +13,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
+
+<link rel="shortcut icon" href="http://priscillathemusical.co.nz/wp-content/uploads/2015/09/favicon-1.ico" />
+
 <link href='https://fonts.googleapis.com/css?family=Varela+Round|Dancing+Script:400,700' rel='stylesheet' type='text/css'>
 
 <?php wp_head(); ?>
@@ -40,16 +42,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<div class="show-for-large-up social-icons small-12 medium-12 large-4 columns">
 				<?php get_template_part( 'partials/social', 'icons' ); ?>
 			</div>
-		</div>
-		
-		<?php
-  		//Flat Menu
-  		//get_template_part( 'partials/flat', 'menu' ); 
-  		
-  		//Top Menu
-  		//get_template_part( 'partials/top', 'bar' ); 
-		?>
-		
+		</div>						
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

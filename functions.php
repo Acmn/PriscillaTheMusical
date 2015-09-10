@@ -110,7 +110,7 @@ add_action( 'widgets_init', 'starter_widgets_init' );
  * Enqueue scripts and styles.
  */
 
-add_action( 'wp_enqueue_scripts', 'starter_scripts' );
+//add_action( 'wp_enqueue_scripts', 'starter_scripts' );
 
 /**
  * Implement the Custom Header feature.
@@ -167,3 +167,30 @@ function australian_address( $address_types, $form_id ) {
     );
     return $address_types;
 }
+
+//LOGIN PAGE
+
+function my_loginlogo() {
+  echo '<style type="text/css">
+    h1 a {
+      background-image: url(' . get_template_directory_uri() . '/login/logo.png) !important;
+    }
+  </style>';
+}
+add_action('login_head', 'my_loginlogo');
+
+function my_loginURL() {
+    return '/';
+}
+add_filter('login_headerurl', 'my_loginURL');
+
+function my_loginURLtext() {
+    return 'Priscilla';
+}
+add_filter('login_headertitle', 'my_loginURLtext');
+
+function my_logincustomCSSfile() {
+    wp_enqueue_style('login-styles', get_template_directory_uri() . '/login/login_styles.css');
+}
+add_action('login_enqueue_scripts', 'my_logincustomCSSfile');
+

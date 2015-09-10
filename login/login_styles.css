@@ -1,0 +1,49 @@
+/* Change background color and font family */
+body {
+  background: url('priscilla-bg-lg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+ 
+/* Change Width and Height of Logo Image + Add Custom Image File */
+form#loginform{
+  background: rgba(255,255,255,.1) !important;
+}
+
+.login h1 a {
+  background-image: url(logo.png);
+  width: 300px;
+  height: 180px;
+  background-size: 300px 180px;
+}
+ 
+/* Add a few changes to the color and style of form itself */
+.login label {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 1em;
+}
+ 
+.login form .input {
+  font-weight: normal;
+}
+ 
+.login #backtoblog a, .login #nav a {
+  color: #ffffff;
+}
+ 
+.wp-core-ui .button-primary {
+  background: #df147d;
+  border-color:white;
+  color:white; 
+  outline:none;
+  box-shadow:none;
+}
+
+.wp-core-ui .button-primary:hover {
+  background: white;
+  color:#df147d; 
+}
