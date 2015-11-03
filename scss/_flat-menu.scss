@@ -1,11 +1,51 @@
-ul.flat-menu {
-    margin: none;
-    list-style: none;
-    text-align: center;
-    li {
-      display: inline-block;
-      a {
-        padding: 2em 0.5em;
+.site-header {
+  ul.flat-menu {
+      margin: 0 0;
+      list-style: none;
+      text-align: center;
+      li {
+        display: inline-block;
+        a {
+          padding: 2em 0.5em;
+          font-family:  $font-family-secondary;
+          color: white;
+        }
+        
+        &:hover, &.current_page_item {
+          a {
+            color: $pink;
+          }
+        }
+        
+        &.current_page_item:hover {
+          a {
+            color: white;
+          }
+        }
+        
+        &.book-tickets {
+          border: 1px solid $pink;
+          border-radius: 3px;
+        }
+       
+       &.social-icons {
+      	text-align:center;
+      
+      	a {
+        	display: inline-block;
+      		margin:0 .1rem;
+          padding: 4px;
+          width: 35px;
+          height: 35px;
+      		color:$darkBlue ;
+      
+      		background: #ffffff;
+      		
+      		border-radius: 50%;
+  
+      	}
+      } 
+        
       }
     }
-  }
+}

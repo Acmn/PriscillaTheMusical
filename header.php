@@ -16,12 +16,11 @@
 
 <link rel="shortcut icon" href="http://priscillathemusical.co.nz/wp-content/uploads/2015/09/favicon-1.ico" />
 
-<link href='https://fonts.googleapis.com/css?family=Varela+Round|Dancing+Script:400,700' rel='stylesheet' type='text/css'>
-
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+  
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NJKZ5D"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -34,16 +33,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <div id="page" class="hfeed page-wrapper">
 	<a class="skip-link screen-reader-text " href="#content"><?php _e( 'Skip to content', 'starter' ); ?></a>				
-	<header id="masthead" class="site-header" role="banner">
-		<div class="row">			
-			<div class="site-branding small-12 medium-12 large-8 columns">
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span><?php bloginfo( 'name' ); ?></span></a></h1>
-			</div><!-- .site-branding -->			
-			<div class="show-for-large-up social-icons small-12 medium-12 large-4 columns">
-				<?php get_template_part( 'partials/social', 'icons' ); ?>
-			</div>
-		</div>						
+  <header id="masthead" class="site-header" role="banner">
+    <div class="row">
+      <div class="small-12 columns">
+        <div class="flex-wrap"> 
+          <a href="/" class="logo">
+            <img src="<?php bloginfo('template_url'); ?>/img/build/nav-logo.png" alt="Priscilla">
+          </a>
+          <?php get_template_part( 'partials/flat', 'menu' ); ?>
+        </div>
+      </div>
+    </div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
 	<div class="site">
+	
