@@ -26,22 +26,30 @@
         &.book-tickets {
           border: 1px solid $pink;
           border-radius: 3px;
+          a {
+            color: $pink;
+          }
         }
        
        &.social-icons {
       	text-align:center;
+      	padding: 0 1em;
       
       	a {
         	display: inline-block;
-      		margin:0 .1rem;
-          padding: 4px;
-          width: 35px;
-          height: 35px;
+      		margin:2px .1rem 0;
+          padding: 2px;
+          width: 28px;
+          height: 28px;
       		color:$darkBlue ;
       
       		background: #ffffff;
       		
       		border-radius: 50%;
+      		
+      		&:hover {
+        		color: $pink;
+      		}
   
       	}
       } 
