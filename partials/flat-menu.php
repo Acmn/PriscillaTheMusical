@@ -1,4 +1,5 @@
-<ul id="primary-menu site-navigation" class="flat-menu main-navigation" role="navigation">
+<a id="menuToggle">MENU <i class="fa fa-bars"></i></a>
+<ul id="primary-menu" class="flat-menu main-navigation" role="navigation">
   <?php wp_nav_menu( array( 
     'theme_location'  => 'primary',
     'container'       => false,

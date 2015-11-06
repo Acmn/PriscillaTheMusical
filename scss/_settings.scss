@@ -133,7 +133,7 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to control various global styles
   $body-bg: #050400;
-  $body-font-color: #ffffff;
+  $body-font-color: $darkBlue;
   $body-font-family: $font-family-primary;
   $body-font-weight: $font-weight-normal;
   $body-font-style: normal;
@@ -222,7 +222,7 @@ $include-html-global-classes: $include-html-classes;
   $header-font-family: $body-font-family;
   $header-font-weight: $font-weight-normal;
   $header-font-style: normal;
-  $header-font-color: $primary-color;
+  $header-font-color: $pink;
   $header-line-height: 1.2;
   $header-top-margin: .2rem;
   $header-bottom-margin: .5rem;
@@ -252,19 +252,19 @@ $include-html-global-classes: $include-html-classes;
 // $subheader-bottom-margin: .5rem;
 
 // A general <small> styling
-// $small-font-size: 60%;
+   $small-font-size: 60%;
    $small-font-color: $primary-color;
 
 // We use these to style paragraphs
-// $paragraph-font-family: inherit;
-// $paragraph-font-weight: $font-weight-normal;
-// $paragraph-font-size: 1rem;
-// $paragraph-line-height: 1.6;
-// $paragraph-margin-bottom: rem-calc(20);
-// $paragraph-aside-font-size: rem-calc(14);
-// $paragraph-aside-line-height: 1.35;
-// $paragraph-aside-font-style: italic;
-// $paragraph-text-rendering: optimizeLegibility;
+  $paragraph-font-family: inherit;
+  $paragraph-font-weight: $font-weight-normal;
+  $paragraph-font-size: 1rem;
+  $paragraph-line-height: 1.6;
+  $paragraph-margin-bottom: rem-calc(20);
+  $paragraph-aside-font-size: rem-calc(14);
+  $paragraph-aside-line-height: 1.35;
+  $paragraph-aside-font-style: italic;
+  $paragraph-text-rendering: optimizeLegibility;
 
 // We use these to style <code> tags
 // $code-color: $oil;

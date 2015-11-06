@@ -1,23 +1,28 @@
+$mobileNavBreakpoint: 760px;
+
 .site-header {
   background: $darkBlue;
   padding: 0.5em 0;
   margin-bottom: 0.5em;
-  
-  .flex-wrap {
-    display: flex;
-    
-    .logo {
-      flex: 1;
+  @media (min-width: $mobileNavBreakpoint) {
+    .flex-wrap {
+      display: flex;
+      
+      .logo {
+        flex: 1;
+      }
+      
     }
-    
   }
+  
+  color:white;
   
 }
 
 
 
 h1.site-title {
-  	span{
+  span{
   		display:block;
 	   position:absolute;
 	   width:100%;
@@ -27,8 +32,8 @@ h1.site-title {
 
   	margin:0 auto;
   	width:300px;
-	height:138px;
-	background: url('../img/logo-sm.png') no-repeat;
+    height:138px;
+    background: url('../img/logo-sm.png') no-repeat;
 	
 	@media 
 		(-webkit-min-device-pixel-ratio: 2), 
@@ -59,6 +64,111 @@ h1.site-title {
 	}
 }
 
+
+.site-header {
+  
+    #menuToggle {
+      float: right;
+      color: white;
+      font-size: 1.2em;
+      @media (min-width: $mobileNavBreakpoint) {
+        display: none;
+      }
+    }
+  
+  ul.flat-menu {
+      margin: 1em 0 0;
+      list-style: none;
+      text-align: center;
+      
+      display: none;
+      
+      &.open {
+        display: block;
+      }
+      
+      @media (min-width: $mobileNavBreakpoint) {
+        display: block;
+        margin: 0 0;
+      }
+      
+      li {
+        display: block;
+        padding: 0.5em 0;
+        @media (min-width: $mobileNavBreakpoint) {
+          display: inline-block;
+          padding: 0;
+        }
+        
+        a {
+          padding: 2em 0.5em;
+          font-family:  $font-family-secondary;
+          color: white;
+        }
+        
+        &:hover, &.current_page_item {
+          a {
+            color: $pink;
+          }
+        }
+        
+        &.current_page_item:hover {
+          a {
+            color: white;
+          }
+        }
+        
+        &.book-tickets {
+          border: 1px solid $pink;
+          border-radius: 3px;
+          a {
+            color: $pink;
+          }
+          
+          &:hover, &:active {
+            background: $pink;
+            color: white;
+          }
+          
+        }
+       
+       &.social-icons {
+      	text-align:center;
+      	padding: 0 1em;
+      
+      	a {
+        	display: inline-block;
+      		margin:2px .1rem 0;
+          padding: 2px;
+          width: 28px;
+          height: 28px;
+      		color:$darkBlue ;
+      
+      		background: #ffffff;
+      		
+      		border-radius: 50%;
+      		
+      		&:hover {
+        		color: $pink;
+      		}
+  
+      	}
+      }
+      
+      &.hashtag {
+        display: block;
+        @media (min-width: $mobileNavBreakpoint) {
+          display: none;
+        }
+        @media #{$large-up} {
+          display: inline-block;
+        }
+        
+      } 
+        
+      }
+    }
+}
 
 
 
