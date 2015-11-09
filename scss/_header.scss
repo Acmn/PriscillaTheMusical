@@ -127,7 +127,7 @@ h1.site-title {
           
           &:hover, &:active {
             background: $pink;
-            color: white;
+            color: white !important;
           }
           
         }
