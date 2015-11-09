@@ -19,6 +19,23 @@ jQuery(document).ready(function( $ ) {
         $('#menuToggle').html('CLOSE <i class="fa fa-times"></i>');
       }
     });
+    
+    
+    $('.fancybox').fancybox({
+  		openEffect  : 'none',
+  		closeEffect : 'none',
+  		padding: 0,
+  	});
+    
+  
+    $('.fancybox-media').fancybox({
+  		openEffect  : 'none',
+  		closeEffect : 'none',
+  		padding: 0,
+  		helpers : {
+  			media : {}
+  		}
+  	});
   
   
   $('.entry-content').fitVids();

@@ -10,11 +10,27 @@
 
 	</div><!-- #content -->
 	</div><!-- .site -->
-
-	<div class="hide-for-large-up social-icons small-8 medium-5 small-centered large-3 columns"><?php get_template_part( 'partials/social', 'icons' ); ?></div>
-
 	
 </div><!-- #page -->
+
+
+  <?php 
+    $quotes = get_field('quotes','options');
+    if ($quotes) { ?>
+      <div id="quotes" class="quotes"> 
+        <?php if ( count($quotes) > 1) { ?>
+        Many Quotes
+        <?php } else { ?>
+          <blockquote>
+            <?php echo $quotes[0]['quote']; ?>
+            <cite><?php echo $quotes[0]['citation']; ?></cite>
+          </blockquote>
+        <?php } ?>
+      </div>
+   <?php
+    }  
+  ?>
+
 
 	<footer id="colophon" class="site-footer text-center" role="contentinfo">
 		<div class="site-info">

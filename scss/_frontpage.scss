@@ -1,6 +1,4 @@
-body.home{
-	background:#0a234c;
-}
+
 .waitlist-conatiner{
 	background: rgba(255,255,255,.1)!important;
 	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.2);
@@ -24,4 +22,120 @@ body.home{
 	h2{
 		color: white !important; 
 	}
+}
+
+.front-video {
+  text-align: center;
+  margin-bottom: 2em;
+  a {
+    position: relative;
+    top:0;
+    transition: all 0.2s ease;
+    &:hover, &:active {
+      top:2px;
+      opacity: 0.7;
+    }
+    
+  }
+  
+}
+
+
+.tickets-box {
+  text-align: center;
+  color: $darkBlue;
+  background: rgba(white, 0.7);
+  .entry-header {
+    background: rgba(#cfbaa9, 0.8);
+    
+    h1 {
+      line-height: 1.1;
+      margin: 0;
+      padding: 0.2em 0;
+    }
+    
+  }
+  
+  .entry-content {
+    padding: 1.5em 0.5em 1em;
+    h2, h3 {
+      color: $darkBlue;
+    }
+    
+    h2 {
+      font-weight: 600;
+    }
+    
+    h3 {
+      font-size: $h5-font-size;
+    }
+    
+    a.tickets-button {
+      margin: 0.5em 0;      
+      color: white;
+      background: $pink;
+      font-family: $font-family-secondary;
+      font-size: 1.8em;
+      padding: 0.3em 2em;
+      text-shadow: 0px 0px 5px rgba(black,0.5);
+      position: relative;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      &:hover, &:active {
+        top:2px;
+        background: darken($pink, 10%);
+      }
+      
+    }
+    
+    p {
+      font-weight: 600;
+      span {
+        font-family: $font-family-secondary;
+      }
+      
+      a {
+        color: $darkBlue;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      
+    }
+    
+  }
+  
+  .performance-times {
+    
+    h4 {
+      font-weight: 600;
+    }
+    
+    padding: 1em 0.5em 0.2em ;
+    background: rgba(#cfbaa9, 0.6);
+    margin-bottom: 0.8em;
+    
+    .performance-times-flex {
+      display: flex;
+      font-size: 0.8em;
+      margin-bottom: 0.8em;
+      flex-wrap: wrap;
+      div {
+        flex: 1 0 33%;
+        @media #{$medium-up} {
+          flex: 1 0 auto;
+        }
+      }
+      
+
+      
+    }
+    
+    p {
+      font-size: 0.8em;
+    }
+    
+  }
+  
 }

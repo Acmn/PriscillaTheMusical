@@ -59,7 +59,7 @@ function starter_setup() {
     
     // additional image sizes
     // delete the next line if you do not need additional image sizes
-    add_image_size( 'cast-headshot', 600, 600, true ); // 600 * 600 square
+    add_image_size( 'cast-headshot', 500, 500, true ); // 600 * 600 square
   }
 
 	// This theme uses wp_nav_menu() in one location.
@@ -194,3 +194,12 @@ function my_logincustomCSSfile() {
 }
 add_action('login_enqueue_scripts', 'my_logincustomCSSfile');
 
+add_filter('excerpt_length', 'my_excerpt_length');
+function my_excerpt_length($length) {
+return 15; }
+
+function new_excerpt_more($more) {
+  global $post;
+	return '... <a class="moretag" href="'. get_permalink($post->ID) . '">Read more.</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');

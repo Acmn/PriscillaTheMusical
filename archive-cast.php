@@ -24,7 +24,8 @@ get_header(); ?>
           <?php
             if ( has_post_thumbnail() ) {
               the_post_thumbnail('cast-headshot', array('class' => 'alignleft'));
-            }
+            } 
+            
             the_excerpt();
           ?>
           <a href="<?php the_permalink();  ?>">Read More</a>

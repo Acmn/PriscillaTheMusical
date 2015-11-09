@@ -21,25 +21,65 @@ get_header(); ?>
 					
 
 					<div class="entry-content">
-						<div class="waitlist-conatiner">
-							<?php
-								/* translators: %s: Name of current post */
-								the_content( sprintf(
-									__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'starter' ),
-									the_title( '<span class="screen-reader-text">"', '"</span>', false )
-								) );
-							?>
-
-							<?php
-								wp_link_pages( array(
-									'before' => '<div class="page-links">' . __( 'Pages:', 'starter' ),
-									'after'  => '</div>',
-								) );
-							?>
-						</div>
-						<div class="featured-quote">
-							<?php the_field('featured_quote'); ?>
-						</div>
+  					<img src="<?php bloginfo('template_url'); ?>/img/build/front-logo2.png" alt="front-logo" />
+  					
+  					<?php $video = get_field('video'); 
+    					if ($video) {
+  					?>
+  					
+  					<div class="front-video text-center"> 
+  					  <a class="fancybox-media" href="<?php echo $video; ?>"><img src="<?php bloginfo('template_url'); ?>/img/build/video-button.png" alt="video-button"/></a>
+  					</div>
+  					
+  					<?php } ?>
+  					
+              <article id="post-<?php the_ID(); ?>" <?php post_class('tickets-box'); ?>>
+              	<header class="entry-header" id="tickets">
+              		<h1>BUY TICKETS</h1>
+              	</header><!-- .entry-header -->
+              
+              	<div class="entry-content">
+              		
+              		<h2>
+                		<?php 
+                  		the_field('theatre');
+                  		echo '<br>';
+                  		the_field('date');
+                    ?>
+              		</h2>
+              		
+              		<h3>
+                		<?php the_field('info_theatre'); ?>
+              		</h3>
+              		
+              		<p><a href="<?php the_field('tickets_link'); ?>" class="tickets-button button" target="_blank">Book Now</a></p>
+              		
+              		<p><span>Or</span> call <?php the_field('phone'); ?> <span>or</span> <a href="<?php the_field('outlet_link'); ?>">Locate an outlet</a>.</p>
+              		
+              		<h2>
+                		<?php the_field('groups_heading'); ?>
+              		</h2>
+              		
+              		<p>Phone <?php the_field('groups_phone'); ?></p>
+              		
+              	</div><!-- .entry-content -->
+                
+                <div class="performance-times">
+                  <h4><?php the_field('show_times_heading'); ?></h4>
+                  <div class="performance-times-flex">
+                    <?php 
+                      $times = get_field('performance_times');
+                      foreach( $times as $time) {
+                        echo '<div>';
+                          echo '<b>'.$time['day'].'</b></br>';
+                          echo $time['time'];
+                        echo '</div>';
+                      }
+                    ?>
+                  </div>
+                  <?php the_field('time_notes'); ?>
+                </div>
+              </article><!-- #post-## -->
 					</div><!-- .entry-content -->
 				</article><!-- #post-## -->
 

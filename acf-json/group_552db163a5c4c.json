@@ -6,7 +6,6 @@
             "key": "field_543f6411307f1",
             "label": "Details",
             "name": "",
-            "prefix": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -16,84 +15,13 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top"
-        },
-        {
-            "key": "field_54765d00699e8",
-            "label": "Waitlist",
-            "name": "waitlist",
-            "prefix": "",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0
-        },
-        {
-            "key": "field_54765d23699e9",
-            "label": "Above Form",
-            "name": "above_form",
-            "prefix": "",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_54765d00699e8",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "toolbar": "full",
-            "media_upload": 1,
-            "tabs": "all"
-        },
-        {
-            "key": "field_54765d33699ea",
-            "label": "Below Form",
-            "name": "below_form",
-            "prefix": "",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_54765d00699e8",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "toolbar": "full",
-            "media_upload": 1,
-            "tabs": "all"
+            "placement": "top",
+            "endpoint": 0
         },
         {
             "key": "field_543f6424307f2",
             "label": "Theatre",
             "name": "theatre",
-            "prefix": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -116,291 +44,6 @@
             "key": "field_543f642a307f3",
             "label": "Date",
             "name": "date",
-            "prefix": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "formatting": "html",
-            "maxlength": "",
-            "readonly": 0,
-            "disabled": 0
-        },
-        {
-            "key": "field_543f644c307f6",
-            "label": "Tickets Link",
-            "name": "tickets_link",
-            "prefix": "",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "row_min": "",
-            "row_limit": "",
-            "layout": "table",
-            "button_label": "Add Row",
-            "min": 0,
-            "max": 0,
-            "sub_fields": [
-                {
-                    "key": "field_543f6474307f7",
-                    "label": "Button Text",
-                    "name": "button_text",
-                    "prefix": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "formatting": "html",
-                    "maxlength": "",
-                    "readonly": 0,
-                    "disabled": 0
-                },
-                {
-                    "key": "field_543f6485307f8",
-                    "label": "URL",
-                    "name": "url",
-                    "prefix": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "formatting": "html",
-                    "maxlength": "",
-                    "readonly": 0,
-                    "disabled": 0
-                }
-            ]
-        },
-        {
-            "key": "field_543f6432307f4",
-            "label": "Phone",
-            "name": "phone",
-            "prefix": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "formatting": "html",
-            "maxlength": "",
-            "readonly": 0,
-            "disabled": 0
-        },
-        {
-            "key": "field_543f6446307f5",
-            "label": "Outlet Link",
-            "name": "outlet_link",
-            "prefix": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "formatting": "html",
-            "maxlength": "",
-            "readonly": 0,
-            "disabled": 0
-        },
-        {
-            "key": "field_543f64bc307fa",
-            "label": "Groups Booking",
-            "name": "",
-            "prefix": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top"
-        },
-        {
-            "key": "field_543f64cb307fb",
-            "label": "Groups Heading",
-            "name": "groups_heading",
-            "prefix": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "formatting": "html",
-            "maxlength": "",
-            "readonly": 0,
-            "disabled": 0
-        },
-        {
-            "key": "field_543f64d6307fc",
-            "label": "Groups Info",
-            "name": "groups_info",
-            "prefix": "",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": "br",
-            "readonly": 0,
-            "disabled": 0
-        },
-        {
-            "key": "field_543f64e1307fd",
-            "label": "Groups Link",
-            "name": "groups_link",
-            "prefix": "",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "row_min": "",
-            "row_limit": "",
-            "layout": "table",
-            "button_label": "Add Row",
-            "min": 0,
-            "max": 0,
-            "sub_fields": [
-                {
-                    "key": "field_543f64ed307fe",
-                    "label": "Groups Button",
-                    "name": "groups_button",
-                    "prefix": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "formatting": "html",
-                    "maxlength": "",
-                    "readonly": 0,
-                    "disabled": 0
-                },
-                {
-                    "key": "field_543f64f9307ff",
-                    "label": "Groups URL",
-                    "name": "groups_url",
-                    "prefix": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "formatting": "html",
-                    "maxlength": "",
-                    "readonly": 0,
-                    "disabled": 0
-                }
-            ]
-        },
-        {
-            "key": "field_543f650a30800",
-            "label": "Information",
-            "name": "",
-            "prefix": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top"
-        },
-        {
-            "key": "field_543f651630801",
-            "label": "Information Heading",
-            "name": "information_heading",
-            "prefix": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -423,7 +66,6 @@
             "key": "field_543f651f30802",
             "label": "Info Theatre",
             "name": "info_theatre",
-            "prefix": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -442,10 +84,30 @@
             "disabled": 0
         },
         {
-            "key": "field_54404e5677c7e",
-            "label": "Location",
-            "name": "location",
-            "prefix": "",
+            "key": "field_543f644c307f6",
+            "label": "Tickets Link",
+            "name": "tickets_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_543f6432307f4",
+            "label": "Phone",
+            "name": "phone",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -465,10 +127,9 @@
             "disabled": 0
         },
         {
-            "key": "field_543f653230803",
-            "label": "Map Link",
-            "name": "map_link",
-            "prefix": "",
+            "key": "field_543f6446307f5",
+            "label": "Outlet Link",
+            "name": "outlet_link",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -486,12 +147,86 @@
             "maxlength": "",
             "readonly": 0,
             "disabled": 0
+        },
+        {
+            "key": "field_543f64bc307fa",
+            "label": "Groups Booking",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_543f64cb307fb",
+            "label": "Groups Heading",
+            "name": "groups_heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_543f64e1307fd",
+            "label": "Groups Phone",
+            "name": "groups_phone",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_543f650a30800",
+            "label": "Information",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
         },
         {
             "key": "field_543f654030804",
             "label": "Show Times Heading",
             "name": "show_times_heading",
-            "prefix": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -511,11 +246,72 @@
             "disabled": 0
         },
         {
-            "key": "field_543f659030805",
-            "label": "Times",
-            "name": "times",
-            "prefix": "",
-            "type": "textarea",
+            "key": "field_5580ba80d2700",
+            "label": "Performance Times",
+            "name": "performance_times",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "layout": "table",
+            "button_label": "Add Day",
+            "sub_fields": [
+                {
+                    "key": "field_5580baaed2701",
+                    "label": "Day",
+                    "name": "day",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_5580bab3d2702",
+                    "label": "Time",
+                    "name": "time",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_5580bac1d2703",
+            "label": "Time Notes",
+            "name": "time_notes",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -525,18 +321,14 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": "",
-            "readonly": 0,
-            "disabled": 0
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
         },
         {
             "key": "field_552b4d5e8e174",
             "label": "Sponsors",
             "name": "sponsors",
-            "prefix": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -557,7 +349,6 @@
                     "key": "field_552b4d6c8e175",
                     "label": "title",
                     "name": "title",
-                    "prefix": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -580,7 +371,6 @@
                     "key": "field_552b4d748e176",
                     "label": "Image",
                     "name": "image",
-                    "prefix": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -605,7 +395,6 @@
                     "key": "field_552b4d868e177",
                     "label": "Included Text",
                     "name": "included_text",
-                    "prefix": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -628,7 +417,6 @@
                     "key": "field_552b4d918e178",
                     "label": "Link",
                     "name": "link",
-                    "prefix": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -653,17 +441,26 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "page",
                 "operator": "==",
-                "value": "tickets"
+                "value": "20"
             }
         ]
     ],
     "menu_order": 0,
     "position": "normal",
-    "style": "seamless",
+    "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
-    "modified": 1429061318
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "comments",
+        "revisions",
+        "author",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1447030355
 }

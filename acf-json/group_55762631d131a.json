@@ -1,12 +1,12 @@
 {
-    "key": "group_556e40c01f051",
-    "title": "Homepage",
+    "key": "group_55762631d131a",
+    "title": "About Page",
     "fields": [
         {
-            "key": "field_563fe78cbb06d",
-            "label": "Video",
-            "name": "video",
-            "type": "text",
+            "key": "field_557626517a367",
+            "label": "Gallery",
+            "name": "gallery",
+            "type": "gallery",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,13 +15,17 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": "",
-            "readonly": 0,
-            "disabled": 0
+            "min": "",
+            "max": "",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -29,7 +33,7 @@
             {
                 "param": "page",
                 "operator": "==",
-                "value": "20"
+                "value": "60"
             }
         ]
     ],
@@ -41,5 +45,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1447032979
+    "modified": 1447028600
 }

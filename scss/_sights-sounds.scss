@@ -1,0 +1,48 @@
+.gallery {
+  margin-bottom: 2em;
+  
+  &:hover {
+    img {
+      opacity: 0.6;
+    }
+  }
+  
+  img {
+    width: 47%;
+    margin: 0 2% 2% 0;
+    @media #{$medium-up} {
+      width: 31%;
+      margin: 0 1.5% 1.5% 0;
+    }
+    
+    &:hover {
+      opacity: 1;
+    }
+    
+  }
+}
+
+.video-gallery {
+  
+  &:hover {
+    a {
+      opacity: 0.6;
+    }
+  }
+  
+  display: flex;
+  flex-wrap: wrap;
+  a {
+    flex: 0 0 50%;
+    padding: 0 2% 2% 0;
+    
+    p {
+      color: $darkBlue;
+      font-size: 0.8em;
+    }
+    &:hover {
+      opacity: 1;
+    }
+    
+  }
+}

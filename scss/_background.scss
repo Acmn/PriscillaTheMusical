@@ -1,39 +1,5 @@
-body.home{
-.page-wrapper{
-	max-width: 100%;
-	width: 100%;
-	min-height: 920px !important;
-	height: auto !important;	
-	background: url(../img/priscilla-bg-lg.jpg) repeat-x;
-	background-position: 55% 180px;
-	padding-bottom: 40px;
-
-	@media only screen and (min-width: 375px) {
-		background-position: 55% 90px;
-		padding-bottom: 40px;
-	}
-
-	@media #{$medium-up}{
-		background-position: 50% 60px;
-	}
-
-	@media #{$large-up}{
-		background-position: 50% 0px;
-		padding-bottom: 0;
-	}
-	
-	margin: 0 auto !important;
-	display: block;
-	position: relative;
-}
-}
-
-.page-wrapper{
-	max-width: 100%;
-	width: 100%;
-	min-height: 920px !important;
-	height: auto !important;	
-	background: url(../img/priscilla-bg-lg.jpg) top center repeat-x;
+body {
+	background: #110d01 url(../img/build/background.jpg) no-repeat;
 	padding-bottom: 40px;
 
 	@media #{$large-up}{

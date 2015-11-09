@@ -1,3 +1,32 @@
+.quotes {
+  background: $pink;
+  padding: 1em 0;
+  text-align: center;
+  
+  blockquote {
+    border-left: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: $h4-font-size;
+    
+    @media #{$medium-up} {
+      font-size: $h3-font-size;
+    }
+    
+    cite {
+      font-style: normal;
+      text-transform: uppercase;
+      &:before {
+        content: "";
+      }
+    }
+    
+  }
+  
+}
+
+
 footer{
 	padding:2rem 0;
 	
@@ -13,26 +42,3 @@ footer{
 	}
 }
 
-// Stick Footer 
-* {
-  margin: 0;
-}
-html, body {
-  height: 100%;
-}
-#page {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -110px;
-}
-#page:after {
-  content: "";
-  display: block;
-}
-.site-footer{
-  height: 100px; 
-
-}
-.site-footer {
-  background: black;
-}
