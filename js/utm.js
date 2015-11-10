@@ -110,7 +110,7 @@ jQuery(document).ready(function( $ ) {
 
   // ALL OUR VARIABLES
   
-  var showCode = 'XX_';
+  var showCode = 'CFC_NZ_TET_PRI_';
 
   
   if(document.getElementById("ticketsPage")) {
