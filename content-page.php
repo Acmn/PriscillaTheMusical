@@ -25,3 +25,6 @@
 		<?php edit_post_link( __( 'Edit', 'starter' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
+
+
+<?php get_header(); ?>

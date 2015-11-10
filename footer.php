@@ -34,7 +34,7 @@
 
 	<footer id="colophon" class="site-footer text-center" role="contentinfo">
 		<div class="site-info">
-			<p><a href="/contact-us">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/privacy-policy">Privacy Policy</a><!-- | <a href="/media">Media</a>--></p>
+			<p><a href="/contact-us">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/media">Media</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/privacy-policy">Privacy Policy</a><!-- | <a href="/media">Media</a>--></p>
 			<!--<p>All rights reserved &copy; <?php echo date('Y'); ?></p>-->
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

@@ -30,12 +30,14 @@
 footer{
 	padding:2rem 0;
 	
-	p, a{
-		margin-bottom:0;
+	p, a {
+		margin-bottom: 0;
+		color: rgba(#eee,0.7);
+		font-size: 0.9em;
 	}
 	
 	a{
-		color:white!important;
+		color:white;
 		&:hover{
 			color:primary-color;
 		}

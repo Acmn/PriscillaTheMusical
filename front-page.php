@@ -38,7 +38,7 @@ get_header(); ?>
               		<h1>BUY TICKETS</h1>
               	</header><!-- .entry-header -->
               
-              	<div class="entry-content">
+              	<div class="entry-content" id="ticketsPage">
               		
               		<h2>
                 		<?php 
@@ -52,7 +52,7 @@ get_header(); ?>
                 		<?php the_field('info_theatre'); ?>
               		</h3>
               		
-              		<p><a href="<?php the_field('tickets_link'); ?>" class="tickets-button button" target="_blank">Book Now</a></p>
+              		<p><a href="<?php the_field('tickets_link'); ?>" class="ticket-button button" target="_blank">Book Now</a></p>
               		
               		<p><span>Or</span> call <?php the_field('phone'); ?> <span>or</span> <a href="<?php the_field('outlet_link'); ?>">Locate an outlet</a>.</p>
               		

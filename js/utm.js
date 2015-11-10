@@ -168,7 +168,6 @@ jQuery(document).ready(function( $ ) {
       $('a.ticket-button').each(function(){
       
         var newUTM = 'utm_source='+source+'&utm_medium=acmn&utm_campaign='+campaign;
-        
         baseUrl = this.href;
         
         if(baseUrl.indexOf("?") > -1) {

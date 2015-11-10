@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The template for displaying cast.
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -12,28 +12,17 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main people-list" role="main">
-      
+	<div id="primary" class="content-area row">
+		<main id="main" class="site-main site-page small-12 medium-12 large-8 columns" role="main">
+  		<h1>Cast <a href="/creative-team">/ Creative</a></h1>
+      <div class="news-gallery"> 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-        <section class="cast-member">
-          <h1><a href="<?php the_permalink();  ?>"><?php the_title(); ?></a></h1>
-          <h2><?php the_field('role'); ?></h2>
-          <p>Follow on Twitter: <a href="http://twitter.com/<?php the_field('twitter_handle'); ?>" target="_blank">@<?php the_field('twitter_handle'); ?></a></p>
-          <?php
-            if ( has_post_thumbnail() ) {
-              the_post_thumbnail('cast-headshot', array('class' => 'alignleft'));
-            } 
-            
-            the_excerpt();
-          ?>
-          <a href="<?php the_permalink();  ?>">Read More</a>
-        </section>
+				<?php get_template_part( 'content', 'cast' ); ?>
 
 
 			<?php endwhile; // end of the loop. ?>
-
+      </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

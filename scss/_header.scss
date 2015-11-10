@@ -114,7 +114,7 @@ h1.site-title {
         
         &.current_page_item:hover {
           a {
-            color: white;
+            color: darken($pink, 15%);
           }
         }
         
@@ -127,7 +127,9 @@ h1.site-title {
           
           &:hover, &:active {
             background: $pink;
-            color: white !important;
+            a {
+              color: white !important;
+            }
           }
           
         }

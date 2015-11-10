@@ -25,8 +25,8 @@ module.exports = {
 		'skip-link-focus-fix.js',
 		'bower_components/fitvids/jquery.fitvids.js',
 		'js/utm.js',
-		  'js/jquery.fancybox.js',
-		  'js/jquery.fancybox-media.js',
+		'js/jquery.fancybox.js',
+		'js/jquery.fancybox-media.js',
 		//'js/responsiveslides.js',
 		'js/app.js'
     ],

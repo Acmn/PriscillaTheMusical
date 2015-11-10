@@ -15,18 +15,19 @@
     padding: 0;
     
     img {
-      margin: 0 0 1em;
+      margin: 0;
     }
     .content-box {
       h1 a, a {
+        
         color: $pink;
         
         &:hover {
-          color: $darkBlue;
+          color: darken($pink, 15%);
         }
         
       }
-      padding: 0 1em;
+      padding: 1em 1em 0.5em;
     }
     
   }

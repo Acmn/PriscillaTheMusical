@@ -60,6 +60,7 @@ function starter_setup() {
     // additional image sizes
     // delete the next line if you do not need additional image sizes
     add_image_size( 'cast-headshot', 500, 500, true ); // 600 * 600 square
+    add_image_size( 'cast-wide', 880, 550, true );
   }
 
 	// This theme uses wp_nav_menu() in one location.

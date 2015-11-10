@@ -1,5 +1,16 @@
-.people-list {
-  section {
-    @extend .clearfix;
+.cast-member {
+  h1 {
+    font-size: $h4-font-size;
+  }
+  
+  h2 {
+    font-size: $h5-font-size;
+  }
+}
+
+.single .site-page article.cast-member {
+    padding: 0;
+  .content-box {
+    padding: 0 1em 0.5em;
   }
 }

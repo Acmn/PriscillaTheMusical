@@ -1,5 +1,8 @@
 
 .site {
+  @media #{$large-up} {
+    min-height: 920px;
+  }
   @include grid-row();
   .site-header, .site-content, .site-footer {
     @include grid-column($total-columns);

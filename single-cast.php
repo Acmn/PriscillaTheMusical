@@ -12,22 +12,15 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="content-area row">
+		<main id="main" class="site-main site-page small-12 medium-12 large-8 columns" role="main">
 
-			<?php the_post(); ?>
-      <article class="cast-member">
-        <h1><?php the_title(); ?></h1>
-        <h2><?php the_field('role'); ?></h2>
-        <p>Follow on Twitter: <a href="http://twitter.com/<?php the_field('twitter_handle'); ?>" target="_blank">@<?php the_field('twitter_handle'); ?></a></p>
-        <?php
-          if ( has_post_thumbnail() ) {
-            the_post_thumbnail('cast-headshot', array('class' => 'alignleft'));
-          }
-          the_content();
-        ?>
-      </article>
-			
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				<?php get_template_part( 'content', 'cast-single' ); ?>
+
+
+			<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
