@@ -9,6 +9,6 @@
       <?php get_template_part( 'partials/social', 'icons' ); ?>
     </li>
     <li class="hashtag">
-      #FrockRock
+      #PriscillaNZ
     </li>
 </ul>
