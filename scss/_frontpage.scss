@@ -114,7 +114,7 @@
     
     padding: 1em 0.5em 0.2em ;
     background: rgba(#cfbaa9, 0.6);
-    margin-bottom: 0.8em;
+
     
     .performance-times-flex {
       display: flex;
@@ -126,10 +126,7 @@
         @media #{$medium-up} {
           flex: 1 0 auto;
         }
-      }
-      
-
-      
+      }      
     }
     
     p {
@@ -137,5 +134,27 @@
     }
     
   }
+
+  .sponsors {
+    background: #110d01;
+    
+    display: flex;
+    justify-content: center;
+    
+    .sponsor {
+      
+      padding: 1rem .5rem;
+      @media #{$medium-up} {
+      }
+      
+      img {
+        max-height: 40px;
+        max-width: 100%;
+        margin-bottom: 0;
+      }
+    }
+  } 
+
+
   
 }

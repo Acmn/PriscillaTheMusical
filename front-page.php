@@ -79,6 +79,26 @@ get_header(); ?>
                   </div>
                   <?php the_field('time_notes'); ?>
                 </div>
+
+                <!-- SPONSORS -->
+                <?php 
+                $sponsors = get_field('sponsors');
+                  if($sponsors) {
+                    echo '<div class="sponsors tickets-section">';
+                      foreach ($sponsors as $sponsor) { ?>
+                        <div class="sponsor">
+                          <a class="link-sponsor" href="<?php echo $sponsor['link']; ?>" data-title="<?php echo $sponsor['title']; ?>" data-city="Auckland" target="_blank">
+                            <img src="<?php echo $sponsor['image']; ?>" alt="<?php echo $sponsor['title']; ?>">
+
+                          </a>
+                        </div>
+                      <?php  
+                    }
+                    echo '</div>';
+                  }
+                ?>
+                <?php // End Sponsores ?>
+
               </article><!-- #post-## -->
 					</div><!-- .entry-content -->
 				</article><!-- #post-## -->
