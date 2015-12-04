@@ -80,6 +80,33 @@ get_header(); ?>
                   <?php the_field('time_notes'); ?>
                 </div>
 
+                <?php
+                $special_heading = get_field('special_heading');  
+                if ($special_heading) { ?>
+                  <section class="special">
+                    <div class="row">
+                      <div class="small-12 columns entry-content">
+                        <h4><b><?php echo $special_heading; ?></b></h4>
+                        <?php 
+                          $info = get_field('special_info'); 
+                          if ($info) {
+                            echo $info;
+                          }
+                          
+                          $special_link = get_field('special_link');
+                          
+                          if ($special_link) {
+                            echo '<a href="'.$special_link.'" class="ticket-button button" target="_blank" data-city="'.$tickets.'" data-title="'.$special_heading.'">'.get_field('special_button_text').'</a>';
+                          }
+                        ?>
+                        
+                      </div>
+                    </div>  
+                  </section>
+                <?php   
+                }
+                ?>
+
                 <!-- SPONSORS -->
                 <?php 
                 $sponsors = get_field('sponsors');

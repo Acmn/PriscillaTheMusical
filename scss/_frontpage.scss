@@ -153,7 +153,15 @@
         margin-bottom: 0;
       }
     }
-  } 
+  }
+
+  .special{
+    background: rgba(#cfbaa9, 0.8);
+    border-top:1px solid $pink;
+    a.button{
+      margin-top:0;
+    }
+  }
 
 
   
