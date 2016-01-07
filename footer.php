@@ -8,9 +8,9 @@
  */
 ?>
 
-	</div><!-- #content -->
-	</div><!-- .site -->
-	
+  </div><!-- #content -->
+  </div><!-- .site -->
+  
 </div><!-- #page -->
 
 
@@ -31,17 +31,17 @@
     }  
   ?>
 
-
-	<footer id="colophon" class="site-footer text-center" role="contentinfo">
-		<div class="site-info">
-			<p><a href="/contact-us">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/media">Media</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/privacy-policy">Privacy Policy</a><!-- | <a href="/media">Media</a>--></p>
-			<!--<p>All rights reserved &copy; <?php echo date('Y'); ?></p>-->
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+  <?php get_template_part( 'partials/subscribe', 'home' ); ?>
+  <footer id="colophon" class="site-footer text-center" role="contentinfo">
+    <div class="site-info">
+      <p><a href="/contact-us">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/media">Media</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/privacy-policy">Privacy Policy</a><!-- | <a href="/media">Media</a>--></p>
+      <!--<p>All rights reserved &copy; <?php echo date('Y'); ?></p>-->
+    </div><!-- .site-info -->
+  </footer><!-- #colophon -->
 
 <?php wp_footer(); ?>
 <!--[if lt IE 9 ]>
-	<script src="<?php bloginfo('template_url'); ?>/build/REM-unit-polyfill/js/rem.min.js" type="text/javascript"></script>
+  <script src="<?php bloginfo('template_url'); ?>/build/REM-unit-polyfill/js/rem.min.js" type="text/javascript"></script>
 <![endif]-->
 </body>
 </html>
