@@ -39,5 +39,8 @@ jQuery(document).ready(function( $ ) {
   
   
   $('.entry-content').fitVids();
+
+  $( ".spu-content > #gform_wrapper_3 > #gform_3" ).addClass( "gtm-popup-form-subscribe" );
+  $( ".subscribe > .row > div > #gform_wrapper_3 > #gform_3" ).addClass( "gtm-footer-form-subscribe" );
   
 });

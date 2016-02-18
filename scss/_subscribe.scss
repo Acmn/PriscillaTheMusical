@@ -1,0 +1,81 @@
+.subscribe, .spu-content {
+  background: #081f48;
+  padding: 30px 5px;
+  h3 {
+    color: white;
+  }
+  .gform_wrapper, gform_wrapper_3 {
+    margin: 0 auto;
+    .top_label {
+      .gfield_label {
+        display: none;
+      }
+      li.gfield.gf_right_half select.medium {
+        color: white;
+      }
+    }
+    div.validation_error {
+      text-align: center;
+      background: rgba(0,0,39,.75);
+    }
+    li.gfield.gfield_error.gfield_contains_required div.gfield_description {
+      background: rgba(0,0,39,.75);
+    }
+    .gform_footer {
+      transition: 0.5s;
+      margin: 15px auto !important;
+      padding: 1em 0 .625em;
+      width: 300px;
+      position: relative;
+      text-align: center;
+      &:hover, &:focus {
+
+      }
+      @media only screen and (max-width: 48.625em) {
+        min-width: 97.5%;
+        text-align: center;
+      }
+    }
+    input[type=submit].gform_button.button {
+      background: $secondary-color;
+      color: white;
+      font-size: 2em;
+      font-weight: normal;
+      border: 1px solid white; 
+      padding: 10px;
+      &:hover, &:focus {
+        background: #000027;
+      }
+    }
+    input.button {
+      font-size: 1.375em;
+      font-weight: bold;
+    }
+    .ginput_complex label {
+      display: none;
+    }
+    ::-webkit-input-placeholder {
+      color: white;
+    }
+    :-moz-placeholder {
+       color: white;
+    }
+    :-ms-input-placeholder {
+       color: white;
+    }
+  }
+  div.gf_simple_horizontal div.gform_body, div.gf_simple_horizontal_wrapper div.gform_body {
+    @media only screen and (max-width: 48.625em) {
+      min-width: 100% !important;
+    }
+  }
+  p.label {
+    color: white;
+    font-size: 0.8em;
+  }
+  li.hack-full-width {
+    @media only screen and (max-width: 48.625em) {
+      min-width: 97.5%;
+    }
+  }
+}
