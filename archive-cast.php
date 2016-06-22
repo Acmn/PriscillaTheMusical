@@ -14,7 +14,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area row">
 		<main id="main" class="site-main site-page small-12 medium-12 large-8 columns" role="main">
-  		<h1>Cast <a href="/creative-team">/ Creative</a></h1>
+  		<h1>Cast <!-- <a href="/creative-team">/ Creative</a> --></h1>
       <div class="news-gallery"> 
 			<?php while ( have_posts() ) : the_post(); ?>
 

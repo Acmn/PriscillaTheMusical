@@ -20,12 +20,6 @@
     <?php
       the_excerpt();
     ?>
-    <?php 
-      $twitter = get_field('twitter_handle'); 
-      if($twitter) {
-    ?>
-      <i class="fa fa-twitter"></i> <a href="http://twitter.com/<?php echo $twitter; ?>" target="_blank">@<?php the_field('twitter_handle'); ?></a>
-    <?php } ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
 
