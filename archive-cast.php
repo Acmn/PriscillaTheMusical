@@ -16,7 +16,19 @@ get_header(); ?>
 		<main id="main" class="site-main site-page small-12 medium-12 large-8 columns" role="main">
   		<h1>Cast <!-- <a href="/creative-team">/ Creative</a> --></h1>
       <div class="news-gallery"> 
-			<?php while ( have_posts() ) : the_post(); ?>
+				<?php 
+          // Call in Cast 
+            $args = array(
+              'posts_per_page'  => -1,
+              'post_type'       => 'cast',
+              'orderby'         => 'menu_order',
+              'order'           => 'ASC',
+             //'meta_key'        => 'principal_cast',
+             // 'meta_value'      => true
+            );            
+            $the_query = new WP_Query( $args );
+            while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
 
 				<?php get_template_part( 'content', 'cast' ); ?>
 
