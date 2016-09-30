@@ -79,7 +79,58 @@ get_header(); ?>
                   </div>
                   <?php the_field('time_notes'); ?>
                 </div>
-
+                <?php
+                $special_heading2 = get_field('special_heading2');  
+                if ($special_heading2) { ?>
+                  <section class="special">
+                    <div class="row">
+                      <div class="small-10 small-centered columns entry-content">
+                        <h4><b><?php echo $special_heading2; ?></b></h4>
+                        <?php 
+                          $info2 = get_field('special_info2'); 
+                          if ($info2) {
+                            echo $info2;
+                          }
+                          
+                          $special_link = get_field('special_link2');
+                          
+                          if ($special_link) {
+                            echo '<a href="'.$special_link.'" class="ticket-button button" target="_blank" data-city="'.$tickets.'" data-title="'.$special_heading.'">'.get_field('special_button_text').'</a>';
+                          }
+                        ?>
+                        
+                      </div>
+                    </div>  
+                  </section>
+                <?php   
+                }
+                ?>
+                <?php
+                $special_heading3 = get_field('special_heading3');  
+                if ($special_heading3) { ?>
+                  <section class="special">
+                    <div class="row">
+                      <div class="small-10 small-centered columns entry-content">
+                        <h4><b><?php echo $special_heading3; ?></b></h4>
+                        <?php 
+                          $info3 = get_field('special_info3'); 
+                          if ($info3) {
+                            echo $info3;
+                          }
+                          
+                          $special_link3 = get_field('special_link3');
+                          
+                          if ($special_link3) {
+                            echo '<a href="'.$special_link3.'" class="ticket-button button" target="_blank" data-city="'.$tickets.'" data-title="'.$special_heading.'">'.get_field('special_button_text').'</a>';
+                          }
+                        ?>
+                        
+                      </div>
+                    </div>  
+                  </section>
+                <?php   
+                }
+                ?>
                 <?php
                 $special_heading = get_field('special_heading');  
                 if ($special_heading) { ?>
@@ -106,7 +157,6 @@ get_header(); ?>
                 <?php   
                 }
                 ?>
-
                 <!-- SPONSORS -->
                 <?php 
                 $sponsors = get_field('sponsors');

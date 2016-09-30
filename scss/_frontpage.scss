@@ -1,29 +1,23 @@
-
 .waitlist-conatiner{
 	background: rgba(255,255,255,.1)!important;
 	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.2);
 	padding:0 1rem;
 	border-radius:12px;
-	
 	hr{
 		margin-left:-1rem;
 		margin-right:-1rem;
 		border-color:rgba(0,0,0,.1)!important;
 	}
-	
 	h2{
 		margin: 0;
 	}
 }
-
 .featured-quote{
-	padding-top:10px;
-	
+	padding-top:10px;	
 	h2{
 		color: white !important; 
 	}
 }
-
 .front-video {
   text-align: center;
   margin-bottom: 2em;
@@ -36,40 +30,31 @@
       opacity: 0.7;
     }
     
-  }
-  
+  } 
 }
-
-
 .tickets-box {
   text-align: center;
   color: $darkBlue;
   background: rgba(white, 0.7);
   .entry-header {
-    background: rgba(#cfbaa9, 0.8);
-    
+    background: rgba(#cfbaa9, 0.8);    
     h1 {
       line-height: 1.1;
       margin: 0;
       padding: 0.2em 0;
     }
-    
   }
-  
   .entry-content {
     padding: 1.5em 0.5em 1em;
     h2, h3 {
       color: $darkBlue;
-    }
-    
+    } 
     h2 {
       font-weight: 600;
     }
-    
     h3 {
       font-size: $h5-font-size;
     }
-    
     a.ticket-button {
       margin: 0.5em 0;      
       color: white;
@@ -84,38 +69,31 @@
       &:hover, &:active {
         top:2px;
         background: darken($pink, 10%);
-      }
-      
+      } 
     }
-    
     p {
       font-weight: 600;
       span {
         font-family: $font-family-secondary;
-      }
-      
+      } 
       a {
-        color: $darkBlue;
+        color: $pink;
         text-decoration: underline;
         &:hover {
           text-decoration: none;
         }
       }
-      
     }
-    
+    a {
+      color: $pink;
+    }
   }
-  
-  .performance-times {
-    
+  .performance-times { 
     h4 {
       font-weight: 600;
-    }
-    
+    } 
     padding: 1em 0.5em 0.2em ;
     background: rgba(#cfbaa9, 0.6);
-
-    
     .performance-times-flex {
       display: flex;
       font-size: 0.8em;
@@ -128,25 +106,18 @@
         }
       }      
     }
-    
     p {
       font-size: 0.8em;
     }
-    
   }
-
   .sponsors {
     background: #110d01;
-    
     display: flex;
     justify-content: center;
-    
     .sponsor {
-      
       padding: 1rem .5rem;
       @media #{$medium-up} {
       }
-      
       img {
         max-height: 40px;
         max-width: 100%;
@@ -154,7 +125,6 @@
       }
     }
   }
-
   .special{
     background: rgba(#cfbaa9, 0.8);
     border-top:1px solid $pink;
@@ -162,7 +132,4 @@
       margin-top:0;
     }
   }
-
-
-  
 }
