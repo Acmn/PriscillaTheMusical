@@ -52,19 +52,19 @@ get_header(); ?>
                 		<?php the_field('info_theatre'); ?>
               		</h3>
               		
-              		<p><a href="<?php the_field('tickets_link'); ?>" class="ticket-button button" target="_blank">Book Now</a></p>
+              		<!-- <p><a href="<?php the_field('tickets_link'); ?>" class="ticket-button button" target="_blank">Book Now</a></p>
               		
-              		<p><span>Or</span> call <?php the_field('phone'); ?> <span>or</span> <a href="<?php the_field('outlet_link'); ?>">Locate an outlet</a>.</p>
-              		
-              		<h2>
+              		<p><span>Or</span> call <?php the_field('phone'); ?> <span>or</span> <a href="<?php the_field('outlet_link'); ?>">Locate an outlet</a>.</p> -->
+              		<h2>Thank You New Zealand</h2>
+              		<!-- <h2>
                 		<?php the_field('groups_heading'); ?>
               		</h2>
               		
               		<p>Phone <?php the_field('groups_phone'); ?></p>
               		
-              	</div><!-- .entry-content -->
+              	</div><! .entry-content --> 
                 
-                <div class="performance-times">
+<!--                 <div class="performance-times">
                   <h4><?php the_field('show_times_heading'); ?></h4>
                   <div class="performance-times-flex">
                     <?php 
@@ -156,7 +156,7 @@ get_header(); ?>
                   </section>
                 <?php   
                 }
-                ?>
+                ?> -->
                 <!-- SPONSORS -->
                 <?php 
                 $sponsors = get_field('sponsors');
