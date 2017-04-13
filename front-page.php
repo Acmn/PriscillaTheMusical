@@ -35,7 +35,7 @@ get_header(); ?>
   					
               <article id="post-<?php the_ID(); ?>" <?php post_class('tickets-box'); ?>>
               	<header class="entry-header" id="tickets">
-              		<h1>BUY TICKETS</h1>
+              		<h1>Thank You New Zealand</h1>
               	</header><!-- .entry-header -->
               
               	<div class="entry-content" id="ticketsPage">
@@ -55,7 +55,6 @@ get_header(); ?>
               		<!-- <p><a href="<?php the_field('tickets_link'); ?>" class="ticket-button button" target="_blank">Book Now</a></p>
               		
               		<p><span>Or</span> call <?php the_field('phone'); ?> <span>or</span> <a href="<?php the_field('outlet_link'); ?>">Locate an outlet</a>.</p> -->
-              		<h2>Thank You New Zealand</h2>
               		<!-- <h2>
                 		<?php the_field('groups_heading'); ?>
               		</h2>
